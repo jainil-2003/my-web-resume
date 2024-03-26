@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: none;
+            color: lavender;
+          
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+        .leftsection .buttons{
+            padding: 50px 0;
+        } 
+        .leftsection .btn {
+            padding:  12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightsection img {
+
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(155, 107, 200);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(155, 107, 200);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .secondsection .box{
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+        .image-top{
+            width: 43px;
+            position: relative;
+            top: -52px;
+            left: -10px;
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: -9px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer> div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        nav ul li{
+    display: inline-block;
+    list-style: none ;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px ;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jainil's Portfolio</div>
+            <div class="right">
+                <ul>
+                <li><a href="/">Home</a></li>    
+                <li><a href="/">About </a></li>   
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Project</a></li> 
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My Name is <span class="purple">Jainil</span>
+                <div>And I am a Passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">download resume</button>
+                    <button class="btn">visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have Done so Far</span>
+            <h1>Work Experiance</h1>
+                <div class="box">
+                        <div class="vertical">
+                            <img class="image-top" src="HTML5_badge.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer (2021-2023)
+                            </div>
+                            <div class="vertical-desc">
+                              I Was Started My Web Developing Journy In My College 1st Sem(2021).
+                              I was Created So Many Project using Web Development.   
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src = "download.png" alt="">
+                            <div class="vertical-title">
+                               CSS (2021-2023)
+                            </div>
+                            <div class="vertical-desc">
+                                I Was Started My Web Developing Journy In My College 1st Sem(2021).
+                                I was Created So Many Project using Web Development. 
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="js.png" alt="">
+                            <div class="vertical-title">
+                                Java Script(2021-2023)
+                            </div>
+                            <div class="vertical-desc">
+                                I Was Started My Web Developing Journy In My College 1st Sem(2021).
+                                I was Created So Many Project using Web Development.     
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="uiux.jpg" alt="">
+                            <div class="vertical-title">
+                                UI/UX (2022-2023)
+                            </div>
+                            <div class="vertical-desc">
+                                I am Learn About Figma And create so many real life projects for web design and mobile app design
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="py.png" alt="">
+                            <div class="vertical-title">
+                               python(2022-2023)
+                            </div>
+                            <div class="vertical-desc">
+                             I was Started my Python progrmamming in my 4th sem and i become expert in problem solving using python   
+                            </div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="java.png" alt="">
+                            <div class="vertical-title">
+                                JAVA(2021-2023)
+                            </div>
+                            <div class="vertical-desc">
+                                 I know So many programming Language But i experty is in JAVA ia have such a good knowlaged in OOP concept
+                            </div>
+                        </div>
+                        
+                       
+                        
+                </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Jainil's Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>ABOUT</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>ABOUT</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>ABOUT</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            CopyRights &#169; www.jainilporfolio.com |All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', '&amp; Android Developer.','Java Scipt expert.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
